@@ -18,26 +18,22 @@
         <div class="container">
             <h1>HTML Formular</h1>
             <hr>
-            <p>Bitte geben Sie einen Suchbegriff ein:</p>
-            <input type="search">
-            <p>Bitte geben Sie ein Datum ein:</p>
-            <input type="Dates" pattern="[A-Z]{3}[0-9]{4}">
-            <form>
+                        <form name="suchender">
                 <p>
-                <input type="text" placeholder="Suche">
+                <input type="search" placeholder="Suche">
                 <p>
-                <input type="number" placeholder="Datum">
+                <input type="Dates" placeholder="Datum" pattern="[A-Z]{3}[0-9]{4}">
                 <p>
                 <input type="text" placeholder="Ort">
                 <p>
-                <input type="range" min="0" max="100" name="Umkreis">
-                <label for="Umkreis">Umkreis</label>
+                <input type="range" min="0" max="100" name="Umkreis" id="kmInputId" oninput="kmOutputId.value = kmInputId.value">
+                <output name="kmOutput" id="kmOutputId"></output>
+                <label for="Umkreis">km Umkreis</label>
                 
 
                 <!---Ort, Umkreis (mit Custom Range), Button Senden (validiert) -->
 
                  
-  
 
 
 
